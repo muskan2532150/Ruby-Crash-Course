@@ -39,3 +39,27 @@ puts "Hi".concat("Kitty")
 puts str1 == str2 
 puts str1.eql?(str2)
 puts str1[0...5],str1[-2]
+
+# -----------------------------------------------------------------------------------------
+
+# ------------------------------------
+class Car
+    @id
+    # Constructor 
+    def initialize(id)
+        @id=id
+    end
+    # this is a class variable
+    # @@classvariable
+    # this is a instance variable 
+  def setName(name)
+    @name= name     
+  end  
+  def getName()
+    puts "My name is #{@name}"
+  end
+end
+
+car1 = Car.new("1")
+car1.setName("Anna")
+car1.getName()
